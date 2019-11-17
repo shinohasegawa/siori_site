@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper {
+    max-width: 95%;
+    margin: auto;
+}
+.container {
+    margin: 1em 0;
+}
+.inner {
+    width: 100%;
+    margin: 1em auto;
+    clear: both;
+}
+.inner .list {
+    margin: 1em auto;
+}
+.inner .info {
+    margin: 1em auto;
+    width: 60%;
+}
+/* 文字サイズ style */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1em 0;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.6rem;
+    background: #5f9ea0;
+    color: #fff;
+    padding: 0.5em;
+    clear: both;
+}
+h3 {
+    font-size: 1.4rem;
+    background: linear-gradient(transparent 70%, #f1f8ff 70%);
+    margin: 1.5em 0 1em;
+    padding: 1em 1em 0;
+    clear: both;
+}
+h4 {
+    position: relative;
+    background: #f1f8ff;
+    padding: 0.25em 0.5em;
+    border-left: solid 2em #5c9ee7;
+    width: 50%;
+    font-size: 1.3rem;
+}
+h4:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f303";
+    position: absolute;
+    padding: 0em;
+    color: white;
+    font-weight: normal;
+    left: -1.35em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+p, dt, dd, input, label, li {
+    font-size: 1.2rem;
+}
+small {
+    font-size: .8rem;
+}
+p, li, dd {
+    line-height: 1.6;
+}
+.fa-check-circle {
+    color: pink;
+    margin-right: .5em;
+}
+
+.right {
+    float: right;
+    margin-left: 1em;
+}
+.left {
+    float: left;
+    margin-right: 1em;
+}
+/* slide調整 */
+.main {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+/* slide（クラス名の変更不可） */
+  .slick-slide {
+    text-align: center;
+    background: white;
+    max-width: 100%;
+    min-height: 80vh;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+.item01 {
+    background: url(image/top01.jpg);
+}
+.item02 {
+    background: url(image/top02.jpg);
+}
+.item03 {
+    background: url(image/top03.jpg);
+}
+.item01, .item02, .item03 {
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    max-width: 100%;
+}
+.item01 p, .item02 p, .item03 p {
+    color: #fff;
+    position: absolute;
+    bottom: 3em;
+    right: 3em;
+    background: transparent;
+    font-size: 5rem;
+    font-family: 'Source Code Pro', monospace;
+    text-shadow:2px 2px 3px #5a576d;
+}
+/* slide調整ここまで */
+
+dl {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+dt {
+    flex: 30%;
+    background: #999;
+    border: 1px solid #fff;
+    color: #fff;
+}
+dd {
+    flex: 60%;
+    border: #999 1px solid;
+}
+dt:not(:first-of-type) {
+    border-top: 0px;
+}
+dd:not(:first-of-type) {
+    border-top: 0px;
+}
+dt, dd {
+    padding: .5em;
+}
+input {
+    vertical-align: middle;
+}
+.agenda {
+    width: 80%;
+    border: 1px #888 solid;
+    position: relative;
+    margin: 3em auto 2em;
+}
+.agenda h2 {
+    position: absolute;
+    /* left: 50%; */
+    right: 50%;
+    top: -1.4em;
+    background: #fff;
+    color: #000;
+}
+.agenda a {
+    display: block;
+    background: #eee;
+    padding: 1em;
+    margin: 1em 0;
+}
+.agenda a:last-child {
+    margin-bottom: 0;
+}
+
+li:not(:last-child) {
+    margin-bottom: .5em;
+}
+.container03 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.container03 h2 {
+    width: 100%;
+}
+.inner-train {
+    width: 33.333%;
+}
+.inner-train h3 {
+    width: 75%;
+    margin: 1em auto;
+}
+.inner-train dl {
+    width: 80%;
+}
+.inner-train dt {
+    width: 10%;
+    border: 1px #999 solid;
+}
+.inner-train dd {
+    width: 50%;
+}
+.inner-train dl dd span {
+    background: #a7d6ff;
+    padding: .5em;
+    display: block;
+    margin: .5em;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+}
+.inner-train dl dd span:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 20%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #a7d6ff;
+    z-index: 0;
+}
+/* .inner-train dl dd span::before {
+    content: "\A";
+    white-space: pre;
+} */
+@media screen and (max-width: 600px){
+    .wrapper {
+        max-width: 95%;
+        margin: auto;
+    }
+    h3 {
+        padding: 0px;
+    }
+    h4 {
+        width: 80%;
+        margin: 0;
+    }
+    .right {
+        display: block;
+        float: none;
+        margin:auto;
+    }
+    .right img {
+        width: 100%;
+    }
+    .left {
+        display: block;
+    }
+    .main {
+        max-width: 90%;
+        margin: auto;
+        height: auto;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+    }
+    .item01 p, .item02 p, .item03 p {
+        font-size: 2rem;
+    }
+    /* slide調整ここまで */
+    .agenda {
+        width: 100%;
+    }
+    .agenda h2 {
+        right: 0;
+    }
+    .inner .info{
+        width: 100%;
+    }
+    dl, dt, dd {
+        width: 100%;
+    }
+    dt {
+        border: #999 1px solid;
+    }
+    .inner-train {
+        width: 100%;
+    }
+}
